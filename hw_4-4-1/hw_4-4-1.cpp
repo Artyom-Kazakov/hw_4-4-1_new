@@ -59,15 +59,14 @@ int main()
 	int building = 0;
 	int flat = 0;
 
-	//int size = 3;
 	Address* adr_arr = new Address[size];
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < size; i++) {
 		in >> city >> street >> building >> flat;
 		adr_arr[i] = Address(city, street, building, flat);
 	}
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < size; i++) {
 		out << adr_arr[i].get_output_addreess();
 	}
 
